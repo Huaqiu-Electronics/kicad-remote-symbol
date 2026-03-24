@@ -7,7 +7,7 @@ const { ZstdCodec } = require('zstd-codec');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const BASE_DIR = path.resolve(__dirname, '../server/data');
+const BASE_DIR = path.resolve(__dirname, './data');
 const CONFIG_PATH = path.join(BASE_DIR, 'parts.json');
 
 app.use(cors());
